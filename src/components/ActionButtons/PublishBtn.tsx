@@ -76,7 +76,7 @@ const Publish: FC<PublishProps> = ({ loggedIn}) => {
                 </DialogHeader>
                 
                 {!isEmpty ? (
-                    loggedIn ? 
+                    true ? 
                     <Link href={`/preview?data=${encodeData(MyLink)} ` } className={cn(buttonVariants())} >Confirm to publish</Link>:
                     <Link href={`/auth/signin?callbackUrl=/preview?data=${encodeData(MyLink)} ` } className={cn(buttonVariants())} >Login To Continue</Link>
                     // <>
