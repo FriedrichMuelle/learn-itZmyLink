@@ -36,7 +36,7 @@ export default function Component({localLink}:{localLink:string}) {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [isCopied, setIsCopied] = useState(false);
-  const baseUrl = "itzmylink.vercel.app/1";
+  const baseUrl = "learn-it-zmy-link.vercel.app/1";
 
   const fullUrl = `${baseUrl}/${customPath}`;
 
