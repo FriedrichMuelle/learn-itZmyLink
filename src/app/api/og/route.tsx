@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import type { ServerRuntime} from "next"
 import { ImageResponse } from "@vercel/og"
 
-export const runtime: ServerRuntime = "edge"
+// export const runtime: ServerRuntime = "edge"
 
 function truncateString({ str, maxLength }: { str: string, maxLength: number }) {
     if (str.length > maxLength) {
